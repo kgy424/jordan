@@ -39,9 +39,10 @@ h6 {
     pointer-events: none;
 }
 
-.clearfix{
-clear: both;
-display: block;content: "";
+.clearfix {
+    clear: both;
+    display: block;
+    content: "";
 }
 
 /* //Reset */
@@ -53,61 +54,54 @@ display: block;content: "";
 
 /* .nav */
 .nav {
+    display: flex;
     position: relative;
-    padding-top: 40px;
-    height: 100px;
-}
-
-.nav::before {
-    content: "";
-    position: absolute;
     left: 0;
     right: 0;
-    bottom: 2px;
-    height: 2px;
-    background-color: #ddd;
-    opacity: .2;
+    top: 0;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .nav .logo {
-    float: left;
-    padding: 0 50px;
-    width: 130px;
+    display: flex;
+    width: 10%;
+    margin: 20px;
 }
 
 .nav .logo a img {
-    width: 100%;
+    height: 60px;
 }
 
 .nav .menu {
+    width: 80%;
     float: left;
+    margin: 20px 40px;
 }
 
 .nav .menu ul {
-    padding-left: 100px;
-    padding-top: 15px;
+    display: flex;
 }
 
 .nav .menu ul li {
-    float: left;
     margin: 0 20px;
-    font-size: 2vh;
+    font-size: 20px;
 }
 
 .nav .src {
+    width: 10%;
     float: right;
     padding-right: 90px;
-    padding-top: 5px;
 }
 
 .nav .src a i {
-    font-size: 2vw;
+    font-size: 20px;
     transition: .3s;
 }
 
-.nav .src a i:hover{
-transform: scale(1.15);
-color: #fff;
+.nav .src a i:hover {
+    transform: scale(1.15);
+    color: #fff;
 }
 
 /* banner */
@@ -131,10 +125,9 @@ color: #fff;
 }
 
 .slide .slide_R {
-    position: relative;
     height: 100vh;
     width: 35%;
-    float: right;
+    float: left;
 }
 
 .slide .slide_L h2 {
@@ -168,33 +161,32 @@ color: #fff;
     left: 50%;
 }
 
-.slide .slide_L .shoes img {
-    width: 60%;
-}
-
 .slide .slide_L .shoes {
     position: absolute;
-    width: 100%;
     right: -100%;
-    top: 10%;
+    top: 13%;
     opacity: 0;
     transition: 1s .6s;
 }
 
 .slide .slick-active .slide_L .shoes {
-    right: -3%;
+    right: 37%;
     opacity: 1;
+}
+
+.slide .slide_L .shoes img {
+    height: 600px;
 }
 
 /* slide_R */
 .slide .slide_R .R_tit {
     position: relative;
-    width: 100%;
     top: calc(50% - 220px);
     left: -50%;
     float: left;
     opacity: 0;
     transition: 1s .6s;
+    width: 300px;
 }
 
 .slide .slick-active .slide_R .R_tit {
@@ -210,8 +202,7 @@ color: #fff;
 
 .slide .slide_R .R_tit .stars {
     position: absolute;
-    float: right;
-    left: 18%;
+    right: 0;
     top: 35%;
 }
 
@@ -230,15 +221,16 @@ color: #fff;
 .slide .slide_R .R_mid {
     position: absolute;
     top: calc(50% - 120px);
-    right: 0%;
+    right: 0;
     color: #fff;
     opacity: 0;
     transition: 1s .6s;
+    width: 500px;
 }
 
 .slide .slick-active .slide_R .R_mid {
     opacity: 1;
-    right: 30%;
+    right: 9%;
 }
 
 .slide .slide_R .R_mid p {
@@ -263,7 +255,7 @@ color: #fff;
     position: relative;
     top: 50%;
     color: #fff;
-
+    width: 300px;
 }
 
 .slide .slide_R .R_btn .size_btn {
@@ -282,7 +274,6 @@ color: #fff;
     border: 0;
     background-color: #fce22a;
     border-radius: 1px;
-    border-radius: 0;
     font-weight: 700;
     letter-spacing: -1px;
     font-size: 18px;
@@ -299,41 +290,41 @@ color: #fff;
     transition: 1s .6s;
     width: 150px;
     top: 60px;
+    left: 15%;
+    margin-left: 55px;
 }
 
 .slide .slick-active .slide_R .R_btn .cart_btn {
-    left: 15%;
-    opacity: 1;top: -9px;
+    opacity: 1;
+    top: -9px;
 }
 
 .slide .slide_R .R_btn .cart_btn a {
     display: inline-block;
     border: 1px solid #ddd;
     border-radius: 1px;
-    width: 100%;
     font-weight: 700;
     letter-spacing: -1.5px;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 25px;
 }
 
-.slide .slide_R .R_btn .cart_btn a:hover{
+.slide .slide_R .R_btn .cart_btn a:hover {
     color: #FFF;
     transform: scale(1.1);
 }
 
 .slide .slide_R .R_btn .dollor {
     position: absolute;
-    left: 60%;
+    right: -50px;
     transition: 1s .6s;
     opacity: 0;
+    top: -4px;
 }
 
 .slide .slick-active .slide_R .R_btn .dollor {
     opacity: 1;
-    left: 42%;
-    top: -4px;
-}
+right: 0px;}
 
 .slide .slide_R .R_btn .dollor h3 {
     font-size: 25px;
