@@ -39,6 +39,11 @@ h6 {
     pointer-events: none;
 }
 
+.clearfix{
+clear: both;
+display: block;content: "";
+}
+
 /* //Reset */
 
 #wrap {
